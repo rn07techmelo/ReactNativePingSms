@@ -1,0 +1,5 @@
+rootProject.name = 'ReactNativePingSms'
+include ':react-native-silent-ping-sms'
+project(':react-native-silent-ping-sms').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-silent-ping-sms/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
